@@ -45,6 +45,13 @@
         nav a:hover {
             color: red; /* 鼠标悬停时变为红色 */
         }
+         /* 手机端适配 */
+         @media (max-width: 600px) {
+            nav a {
+                margin: 0 5px; /* 缩小间距 */
+                font-size: 14px; /* 调整字体大小 */
+            }
+         }
         /* 搜索框CSS样式 */
         .search-bar {
             display: flex;
