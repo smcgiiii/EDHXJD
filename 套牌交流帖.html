@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论坛交流帖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .user-info img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .username {
+            font-weight: bold;
+        }
+
+        .timestamp {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .post-content {
+            margin-top: 10px;
+        }
+
+        .reply {
+            margin-left: 20px;
+            border-left: 3px solid #ddd;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .reply .user-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+                <!-- 楼主信息 -->
+            <div class="user-info">
+                <img src="user-avater.bmp" alt="User Avatar">
+                <div>
+                    <div class="username">小黑即是小白</div>
+                    <div class="timestamp">发表于 2024年7月26日 15:00</div>
+                </div>
+            </div>
+        <!-- 主楼内容 -->
+            <div class="post-content">
+                纳雅淬毒小石子好强！
+            </div>
+        </div>
+        <!-- 跟帖信息 -->
+        <div class="post reply">
+            <div class="user-info">
+                <img src="user-avater.bmp" alt="User Avatar">
+                <div>
+                    <div class="username">小白即是小黑</div>
+                    <div class="timestamp">回复于 2024年7月26日 16:00</div>
+                </div>
+            </div>
+            <div class="post-content">
+                不要捧杀口牙！
+            </div>
+        </div>
+    </div>
+</body>
+</html>
